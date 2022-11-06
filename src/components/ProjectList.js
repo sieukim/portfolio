@@ -52,7 +52,7 @@ function ProjectList() {
     </Card>,
   }));
   return <div css={style}>
-    <h2>Project</h2>
+    <h1>Project</h1>
     <Divider />
     <Timeline value={events} content={(item) => item.content} />;
   </div>;

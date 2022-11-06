@@ -5,6 +5,7 @@ import { certifications, educations, skills } from '../constants/data';
 import List from '../components/List';
 import ContactList from '../components/ContactList';
 import { darkColor } from '../constants/color';
+import { Divider } from 'primereact/divider';
 
 function Essay() {
   return <p className='essay'>
@@ -62,7 +63,7 @@ function About() {
 
   return <div css={style}>
     <h1>About Me</h1>
-
+    <Divider />
     <div className='container-row'>
       <Essay />
       <ContactList />

@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import { Divider } from 'primereact/divider';
 
 function List({ title, data }) {
   const style = css`
@@ -16,7 +15,6 @@ function List({ title, data }) {
 
   return <div className='list' css={style}>
     <h2>{title}</h2>
-    <Divider />
     <ul>
       {data.map((item, key) => <li key={key}>
         <div className='list-title'>{item.title}</div>

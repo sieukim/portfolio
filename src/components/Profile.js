@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import 'primeicons/primeicons.css';
+import { Tooltip } from 'primereact/tooltip';
 
 
 function Photo() {
@@ -17,7 +18,7 @@ function Photo() {
     }
   `;
   return <div css={style}>
-    <img src={'img/profile.png'} alt='김시은' />
+    <img src={'/img/profile.png'} alt='김시은' />
   </div>;
 }
 
@@ -41,19 +42,23 @@ function Link() {
   const items = [
     {
       icon: 'github',
+      name: 'Github',
       link: 'https://github.com/sieukim',
     },
     {
       icon: 'file-edit',
+      name: 'Blog',
       link: 'https://talking-potato.me',
     },
     {
       icon: 'send',
+      name: 'Mail',
       link: 'mailto:watasieun@gmail.com',
     },
   ];
   return (<ul css={style}>
     {items.map((item, key) => <li key={key}>
+      <Tooltip target={`.pi-${item.icon}`} position='bottom'>{item.name}</Tooltip>
       <a title={item.title} href={item.link}>
         <i className={`pi pi-${item.icon}`}></i>
       </a>

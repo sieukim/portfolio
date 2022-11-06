@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import { Divider } from 'primereact/divider';
 import { darkColor } from '../constants/color';
 import { contacts } from '../constants/data';
 
@@ -28,7 +27,6 @@ function ContactList() {
 
   return <div className='list' css={style}>
     <h2>Contact</h2>
-    <Divider />
     <ul>
       {contacts.map((item, key) => <li key={key}>
         <span className='list-title'>{item.title}</span>
