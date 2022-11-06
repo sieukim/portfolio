@@ -4,20 +4,6 @@ import { NavLink } from 'react-router-dom';
 import { darkColor } from '../constants/color';
 
 function MenuBar() {
-  const items = [
-    {
-      icon: 'home',
-      link: '/',
-    },
-    {
-      icon: 'user',
-      link: '/about',
-    },
-    {
-      icon: 'clone',
-      link: '/project',
-    },
-  ];
   const style = css`
     display: flex;
     flex-direction: column;
@@ -30,7 +16,7 @@ function MenuBar() {
     list-style: none;
     box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
     text-align: center;
-    height: 200px;
+    height: 300px;
 
     i {
       color: #b5b6b7;
@@ -41,6 +27,24 @@ function MenuBar() {
       }
     }
   `;
+  const items = [
+    {
+      icon: 'home',
+      link: '/',
+    },
+    {
+      icon: 'cloud',
+      link: '/project/1',
+    },
+    {
+      icon: 'bolt',
+      link: '/project/2',
+    },
+    {
+      icon: 'moon',
+      link: '/project/3',
+    },
+  ];
   return <ul css={style}>
     {items.map((item, key) => <li key={key}>
       <NavLink to={item.link}>

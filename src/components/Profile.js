@@ -22,20 +22,6 @@ function Photo() {
 }
 
 function Link() {
-  const items = [
-    {
-      icon: 'github',
-      link: 'https://github.com/sieukim',
-    },
-    {
-      icon: 'file-edit',
-      link: 'https://talking-potato.me',
-    },
-    {
-      icon: 'send',
-      link: 'mailto:watasieun@gmail.com',
-    },
-  ];
   const style = css`
     display: flex;
     align-items: center;
@@ -52,6 +38,20 @@ function Link() {
       }
     }
   `;
+  const items = [
+    {
+      icon: 'github',
+      link: 'https://github.com/sieukim',
+    },
+    {
+      icon: 'file-edit',
+      link: 'https://talking-potato.me',
+    },
+    {
+      icon: 'send',
+      link: 'mailto:watasieun@gmail.com',
+    },
+  ];
   return (<ul css={style}>
     {items.map((item, key) => <li key={key}>
       <a title={item.title} href={item.link}>
