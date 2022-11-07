@@ -76,7 +76,7 @@ function About() {
       </div>
     </div>
     <ProjectList />
-  </div>;
+  </div>
 }
 
 export default About;
