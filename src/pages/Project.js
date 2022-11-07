@@ -59,20 +59,20 @@ function Project({ data }) {
       {data.demo}
       <Divider layout='vertical' />
       <div className='container-column container-column-small'>
-        <h2>언제?</h2>
+        <h2>When?</h2>
         <p>{data.when}</p>
-        <h2>누가?</h2>
+        <h2>Who?</h2>
         <p>{data.who}</p>
-        <h2>무엇을?</h2>
+        <h2>What?</h2>
         <p>{data.what}</p>
       </div>
       <Divider layout='vertical' />
       <div className='container-column container-column-small'>
-        <h2>어떻게?</h2>
+        <h2>How?</h2>
         {data.how}
         {data.id !== 1 && <>
           <div className='container-column'>
-            <h2>왜?</h2>
+            <h2>Why?</h2>
             {data.why}
           </div>
         </>
@@ -83,14 +83,14 @@ function Project({ data }) {
     <div className='container-row'>
       {data.id === 1 && <>
         <div className='container-column container-column-big'>
-          <h2>왜?</h2>
+          <h2>Why?</h2>
           {data.why}
         </div>
         <Divider layout='vertical' />
       </>
       }
       <div className={`container-column container-column-${data.id === 1 ? 'big' : undefined}`}>
-        <h2>그래서?</h2>
+        <h2>Then?</h2>
         {data.then}
       </div>
     </div>
