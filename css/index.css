@@ -1,0 +1,307 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  min-width: 1000px;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+header {
+  height: 100px;
+  line-height: 100px;
+  background: #ececec;
+}
+header .title {
+  font-size: 30px;
+  font-weight: bold;
+  width: 1000px;
+  margin: 0 auto;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+main {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+footer {
+  height: 100px;
+  background: #ececec;
+}
+
+.about_section {
+  float: left;
+  width: 650px;
+  height: 165px;
+  padding: 50px 0;
+}
+.about_section .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.about_section .content {
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+.contact_section {
+  float: left;
+  width: 280px;
+  height: 165px;
+  margin-left: 40px;
+  padding: 50px 0;
+  position: relative;
+}
+.contact_section::before {
+  content: "";
+  position: absolute;
+  top: 90px;
+  bottom: 50px;
+  left: -20px;
+  width: 1px;
+  background-color: #ccc;
+}
+.contact_section .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.contact_section .content {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 40px;
+}
+.contact_section .content img {
+  vertical-align: top;
+  margin-top: 7.5px;
+}
+.contact_section .content a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.contact_section .content a:hover {
+  font-weight: bold;
+}
+
+.career_section {
+  clear: both;
+  padding: 50px 0;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+}
+.career_section .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.career_section .career {
+  position: relative;
+  margin-top: 20px;
+}
+.career_section .career .company {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+.career_section .career .job {
+  font-size: 14px;
+  line-height: 40px;
+  color: #3f3e3e;
+  margin-left: 5px;
+}
+.career_section .career .period {
+  font-size: 14px;
+  line-height: 40px;
+  color: #676565;
+  margin-left: 5px;
+}
+.career_section .career .task {
+  width: 620px;
+  margin-left: 30px;
+  line-height: 30px;
+  list-style: square;
+}
+.career_section .career .logo {
+  position: absolute;
+  top: 0;
+  right: 75px;
+}
+
+.project_section {
+  padding: 50px 0;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+}
+.project_section .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.project_section .project {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 15px;
+}
+.project_section .project .name {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.project_section .project .name a {
+  color: #000;
+  text-decoration: none;
+}
+.project_section .project .period {
+  font-size: 14px;
+  line-height: 40px;
+  color: #676565;
+  margin-left: 5px;
+}
+.project_section .project .summary {
+  width: 635px;
+  line-height: 25px;
+}
+.project_section .project .part {
+  margin-top: 15px;
+  width: 625px;
+}
+.project_section .project .part .role {
+  font-size: 16px;
+  font-weight: bold;
+}
+.project_section .project .part .task {
+  line-height: 30px;
+  list-style: square;
+  margin-left: 15px;
+}
+.project_section .project .conclusion {
+  width: 635px;
+  margin-top: 10px;
+  line-height: 25px;
+}
+.project_section .project .demo {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -90px;
+}
+
+@media (max-width: 1023px) {
+  body {
+    min-width: 100vw;
+  }
+  header {
+    height: 50px;
+    line-height: 50px;
+    background-color: #ececec;
+    color: #000;
+  }
+  header .title {
+    font-size: 22px;
+    width: 100vw;
+    padding: 0 20px;
+  }
+  main {
+    width: 100vw;
+    padding: 30px 20px;
+  }
+  footer {
+    height: 50px;
+    background-color: #ececec;
+  }
+  .about_section {
+    float: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+  .about_section .title {
+    background-color: #ececec;
+    color: #000;
+    line-height: 30px;
+    padding-left: 5px;
+  }
+  .contact_section {
+    float: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 30px 0 0;
+  }
+  .contact_section::before {
+    content: none;
+  }
+  .contact_section .title {
+    background-color: #ececec;
+    color: #000;
+    line-height: 30px;
+    padding-left: 5px;
+  }
+  .contact_section .content {
+    padding: 0 5px;
+  }
+  .career_section {
+    padding: 0;
+    margin-top: 30px;
+    border-top: none;
+  }
+  .career_section .title {
+    background-color: #ececec;
+    color: #000;
+    line-height: 30px;
+    padding-left: 5px;
+  }
+  .career_section .career .company {
+    padding-left: 0;
+  }
+  .career_section .career .task {
+    width: auto;
+    margin-left: 15px;
+  }
+  .career_section .career .logo {
+    display: none;
+  }
+  .project_section {
+    padding: 0;
+    margin-top: 30px;
+    border-top: none;
+  }
+  .project_section .title {
+    background-color: #ececec;
+    color: #000;
+    line-height: 30px;
+    padding-left: 5px;
+  }
+  .project_section .project {
+    padding-left: 0;
+  }
+  .project_section .project .summary {
+    width: auto;
+  }
+  .project_section .project .part {
+    width: auto;
+  }
+  .project_section .project .conclusion {
+    width: auto;
+  }
+  .project_section .project .demo {
+    position: initial;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 10px;
+  }
+}

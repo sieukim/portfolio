@@ -1,0 +1,361 @@
+@charset "utf-8";
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  min-width: 1000px;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+header {
+  height: 100px;
+  line-height: 100px;
+  background: #ececec;
+
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    width: 1000px;
+    margin: 0 auto;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+}
+
+main {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+footer {
+  height: 100px;
+  background: #ececec;
+}
+
+.about_section {
+  float: left;
+  width: 650px;
+  height: 165px;
+  padding: 50px 0;
+
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .content {
+    margin-top: 20px;
+    line-height: 25px;
+  }
+}
+
+.contact_section {
+  float: left;
+  width: 280px;
+  height: 165px;
+  margin-left: 40px;
+  padding: 50px 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 90px;
+    bottom: 50px;
+    left: -20px;
+    width: 1px;
+    background-color: #ccc;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .content {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 40px;
+
+    img {
+      vertical-align: top;
+      margin-top: 7.5px;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+
+    a:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.career_section {
+  clear: both;
+  padding: 50px 0;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.career_section .career {
+  position: relative;
+  margin-top: 20px;
+
+  .company {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+    padding-left: 15px;
+  }
+
+  .job {
+    font-size: 14px;
+    line-height: 40px;
+    color: #3f3e3e;
+    margin-left: 5px;
+  }
+
+  .period {
+    font-size: 14px;
+    line-height: 40px;
+    color: #676565;
+    margin-left: 5px;
+  }
+
+  .task {
+    width: 620px;
+    margin-left: 30px;
+    line-height: 30px;
+    list-style: square;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    right: 75px;
+  }
+}
+
+.project_section {
+  padding: 50px 0;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.project_section .project {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 15px;
+
+  .name {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+
+  .period {
+    font-size: 14px;
+    line-height: 40px;
+    color: #676565;
+    margin-left: 5px;
+  }
+
+  .summary {
+    width: 635px;
+    line-height: 25px;
+  }
+
+  .part {
+    margin-top: 15px;
+    width: 625px;
+
+    .role {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .task {
+      line-height: 30px;
+      list-style: square;
+      margin-left: 15px;
+    }
+  }
+
+  .conclusion {
+    width: 635px;
+    margin-top: 10px;
+    line-height: 25px;
+  }
+
+  .demo {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -90px;
+  }
+}
+
+@media (max-width: 1023px) {
+  $backgroundColor: #ececec;
+  $fontColor: #000;
+
+  body {
+    min-width: 100vw;
+  }
+
+  header {
+    height: 50px;
+    line-height: 50px;
+    background-color: $backgroundColor;
+    color: $fontColor;
+
+    .title {
+      font-size: 22px;
+      width: 100vw;
+      padding: 0 20px;
+    }
+  }
+
+  main {
+    width: 100vw;
+    padding: 30px 20px;
+  }
+
+  footer {
+    height: 50px;
+    background-color: $backgroundColor;
+  }
+
+  .about_section {
+    float: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+
+    .title {
+      background-color: $backgroundColor;
+      color: $fontColor;
+      line-height: 30px;
+      padding-left: 5px;
+    }
+  }
+
+  .contact_section {
+    float: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 30px 0 0;
+
+    &::before {
+      content: none;
+    }
+
+    .title {
+      background-color: $backgroundColor;
+      color: $fontColor;
+      line-height: 30px;
+      padding-left: 5px;
+    }
+
+    .content {
+      padding: 0 5px;
+    }
+  }
+
+  .career_section {
+    padding: 0;
+    margin-top: 30px;
+    border-top: none;
+
+    .title {
+      background-color: $backgroundColor;
+      color: $fontColor;
+      line-height: 30px;
+      padding-left: 5px;
+    }
+
+    .career {
+      .company {
+        padding-left: 0;
+      }
+
+      .task {
+        width: auto;
+        margin-left: 15px;
+      }
+
+      .logo {
+        display: none;
+      }
+    }
+  }
+
+  .project_section {
+    padding: 0;
+    margin-top: 30px;
+    border-top: none;
+
+    .title {
+      background-color: $backgroundColor;
+      color: $fontColor;
+      line-height: 30px;
+      padding-left: 5px;
+    }
+
+    .project {
+      padding-left: 0;
+
+      .summary {
+        width: auto;
+      }
+
+      .part {
+        width: auto;
+      }
+
+      .conclusion {
+        width: auto;
+      }
+
+      .demo {
+        position: initial;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 10px;
+      }
+    }
+  }
+}
