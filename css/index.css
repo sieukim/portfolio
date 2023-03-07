@@ -106,14 +106,13 @@ footer {
 
 .career_section .career {
   position: relative;
-  margin-top: 20px;
+  margin: 20px 0 0 15px;
 }
 .career_section .career .company {
   display: inline-block;
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
-  padding-left: 15px;
 }
 .career_section .career .job {
   font-size: 14px;
@@ -128,10 +127,10 @@ footer {
   margin-left: 5px;
 }
 .career_section .career .task {
-  width: 620px;
-  margin-left: 30px;
+  width: 635px;
   line-height: 30px;
-  list-style: square;
+  list-style: square outside;
+  margin-left: 15px;
 }
 .career_section .career .logo {
   position: absolute;
@@ -151,8 +150,7 @@ footer {
 
 .project_section .project {
   position: relative;
-  margin-top: 20px;
-  padding-left: 15px;
+  margin: 20px 0 0 15px;
 }
 .project_section .project .name {
   display: inline-block;
@@ -180,11 +178,12 @@ footer {
 }
 .project_section .project .part .role {
   font-size: 16px;
+  line-height: 30px;
   font-weight: bold;
 }
 .project_section .project .part .task {
   line-height: 30px;
-  list-style: square;
+  list-style: square outside;
   margin-left: 15px;
 }
 .project_section .project .conclusion {
@@ -265,11 +264,10 @@ footer {
     padding-left: 5px;
   }
   .career_section .career .company {
-    padding-left: 0;
+    margin-left: 0;
   }
   .career_section .career .task {
     width: auto;
-    margin-left: 15px;
   }
   .career_section .career .logo {
     display: none;
@@ -286,7 +284,7 @@ footer {
     padding-left: 5px;
   }
   .project_section .project {
-    padding-left: 0;
+    margin-left: 0;
   }
   .project_section .project .summary {
     width: auto;

@@ -118,14 +118,13 @@ footer {
 
 .career_section .career {
   position: relative;
-  margin-top: 20px;
+  margin: 20px 0 0 15px;
 
   .company {
     display: inline-block;
     font-size: 18px;
     line-height: 40px;
     font-weight: bold;
-    padding-left: 15px;
   }
 
   .job {
@@ -143,10 +142,10 @@ footer {
   }
 
   .task {
-    width: 620px;
-    margin-left: 30px;
+    width: 635px;
     line-height: 30px;
-    list-style: square;
+    list-style: square outside;
+    margin-left: 15px;
   }
 
   .logo {
@@ -169,8 +168,7 @@ footer {
 
 .project_section .project {
   position: relative;
-  margin-top: 20px;
-  padding-left: 15px;
+  margin: 20px 0 0 15px;
 
   .name {
     display: inline-block;
@@ -202,12 +200,13 @@ footer {
 
     .role {
       font-size: 16px;
+      line-height: 30px;
       font-weight: bold;
     }
 
     .task {
       line-height: 30px;
-      list-style: square;
+      list-style: square outside;
       margin-left: 15px;
     }
   }
@@ -227,9 +226,6 @@ footer {
 }
 
 @media (max-width: 1023px) {
-  $backgroundColor: #ececec;
-  $fontColor: #000;
-
   body {
     min-width: 100vw;
   }
@@ -237,8 +233,8 @@ footer {
   header {
     height: 50px;
     line-height: 50px;
-    background-color: $backgroundColor;
-    color: $fontColor;
+    background-color: #ececec;
+    color: #000;
 
     .title {
       font-size: 22px;
@@ -254,7 +250,7 @@ footer {
 
   footer {
     height: 50px;
-    background-color: $backgroundColor;
+    background-color: #ececec;
   }
 
   .about_section {
@@ -264,8 +260,8 @@ footer {
     padding: 0;
 
     .title {
-      background-color: $backgroundColor;
-      color: $fontColor;
+      background-color: #ececec;
+      color: #000;
       line-height: 30px;
       padding-left: 5px;
     }
@@ -283,8 +279,8 @@ footer {
     }
 
     .title {
-      background-color: $backgroundColor;
-      color: $fontColor;
+      background-color: #ececec;
+      color: #000;
       line-height: 30px;
       padding-left: 5px;
     }
@@ -300,20 +296,19 @@ footer {
     border-top: none;
 
     .title {
-      background-color: $backgroundColor;
-      color: $fontColor;
+      background-color: #ececec;
+      color: #000;
       line-height: 30px;
       padding-left: 5px;
     }
 
     .career {
       .company {
-        padding-left: 0;
+        margin-left: 0;
       }
 
       .task {
         width: auto;
-        margin-left: 15px;
       }
 
       .logo {
@@ -328,14 +323,14 @@ footer {
     border-top: none;
 
     .title {
-      background-color: $backgroundColor;
-      color: $fontColor;
+      background-color: #ececec;
+      color: #000;
       line-height: 30px;
       padding-left: 5px;
     }
 
     .project {
-      padding-left: 0;
+      margin-left: 0;
 
       .summary {
         width: auto;
